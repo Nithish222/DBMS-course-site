@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+}
+
+:root {
+    --bg--color: #181818c5;
+    --snd-bf-color: #1818183e;
+    --text--color: #fff;
+    --main--color: #f4ec59;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg--color);
+    color: var(--text--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 100;
+    width: 100%;
+    padding: 1rem 5%;
+    background: #1818183e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 4rem;
+    color: #e6e6e6a5;
+    font-weight: 400;
+    cursor: default;
+}
+
+.navbar a {
+    text-decoration: none;
+    position: relative;
+    font-size: 2.4rem;
+    color: #e6e6e6a5;
+    margin-left: 2.5rem;
+    font-weight: 400;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f4ec59;
+    transition: .5s;
+}
+
+.navbar a:hover::before {
+    color: #f4ec59;
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #fff;
+    transition: .5s;
+}
+
+.navbar a.active {
+    color: var(--main--color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main--color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main--color);
+    font-size: 1.6rem;
+    color: var(--bg--color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.heading{
+    text-align: center;
+    font-size: 7.5rem;
+}
+
+span {
+    color: var(--main--color);
+}
+
+.contact{
+    position: relative;
+    top: 25px;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background: var(--snd-bf-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    color: rgb(170, 170, 170);
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}

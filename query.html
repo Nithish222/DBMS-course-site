@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>DBMS | Introduction</title>
+    <link rel="stylesheet" href="style/contentStyles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">DBMS</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="introduction">
+        <div class="wrapper">
+            <div class="collapsible">
+                <input type="checkbox" id="collapsible-head">
+                <label for="collapsible-head">Simple Queries in DBMS<img src="img/drop.png" alt="" class="imgs"></label>
+                <div class="collapsible-text">
+                    <h2>SELECT Statement:</h2>
+                    <p> ~ The SELECT statement retrieves data from a table. <br>
+                        ~ Syntax: SELECT column1, column2, ... FROM table_name; <br> </p> 
+                </div>
+            </div>
+
+            <div class="collapsible1">
+                <input type="checkbox" id="collapsible-head1">
+                <label for="collapsible-head1">WHERE Clause<img src="img/drop.png" alt="" class="imgs"></label>
+                <div class="collapsible-text1">
+                    <h2>WHERE Clause:</h2>
+                    <p> ~ The WHERE clause filters data based on specified conditions. <br>
+                        ~ Syntax: SELECT column1, column2, ... FROM table_name WHERE condition;</p>
+                </div>
+            </div>
+
+            <div class="collapsible2">
+                <input type="checkbox" id="collapsible-head2">
+                <label for="collapsible-head2">ORDER BY Clause<img src="img/drop.png" alt="" class="imgs"></label>
+                <div class="collapsible-text2">
+                    <h2>ORDER BY Clause:</h2>
+                    <p> ~ The ORDER BY clause sorts data in ascending or descending order. <br>
+                        ~ Syntax: SELECT column1, column2, ... FROM table_name ORDER BY column_name ASC|DESC;</p>
+                </div>
+            </div>
+
+            <div class="collapsible3">
+                <input type="checkbox" id="collapsible-head3">
+                <label for="collapsible-head3">JOIN Operation<img src="img/drop.png" alt="" class="imgs"></label>
+                <div class="collapsible-text3">
+                    <h2>JOIN Operation:</h2>
+                    <p> ~ The JOIN operation combines data from multiple tables. <br>
+                        ~ Syntax: SELECT column1, column2, ... FROM table1 INNER JOIN table2 ON table1.column = table2.column;</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="video">
+        <video controls src="video/query.mp4" width="800"></video>
+        <div class="transcript">
+            <input type="checkbox" id="transcript-head">
+            <label for="transcript-head"><img src="img/transcript.png" alt="" class="tr"></label>
+            <div class="transcript-text">
+                <p><br> Simple Queries in DBMS <br>
+                    "When working with a Database Management System, or DBMS, one of the fundamental skills is writing and understanding simple queries. In this video, let's explore basic query types and operations you can perform in a DBMS."<br>
+                    "At its core, a database query is a request for data or information from a database. The most common type of query is the SQL (Structured Query Language) query. SQL is used to communicate with relational databases, allowing users to create, read, update, and delete data."<br>
+                    "Let's start with the most basic query: the SELECT statement. This statement retrieves data from a database. You can use it to fetch specific columns or all columns from a table. For example, if you want to get the names and ages of all employees from an 'Employees' table, you would write: SELECT name, age FROM Employees."<br>
+                    "Another essential query is the WHERE clause, used to filter data based on specific conditions. If you want to retrieve employees older than 30, you could write: SELECT * FROM Employees WHERE age > 30."<br>
+                    "Sorting data is another common operation in a DBMS. You can use the ORDER BY clause to sort results in ascending or descending order. For instance, if you want to list employees by age from youngest to oldest, you would write: SELECT * FROM Employees ORDER BY age ASC."<br>
+                    "Joins are fundamental for working with multiple tables. A JOIN query connects related data from different tables based on a common field. For example, if you have 'Employees' and 'Departments' tables with a common 'department_id' field, you could join them with: SELECT * FROM Employees INNER JOIN Departments ON Employees.department_id = Departments.department_id."<br>
+                    "Aggregation queries are useful for summarizing data. Functions like COUNT, SUM, AVG, MIN, and MAX allow you to perform calculations on data. If you want to count the total number of employees, you could use: SELECT COUNT(*) FROM Employees."<br>
+                    "Subqueries and nested queries add another layer of complexity, allowing you to use a query within a query. This technique is helpful for more complex operations, such as finding employees with salaries above the average salary: SELECT * FROM Employees WHERE salary > (SELECT AVG(salary) FROM Employees)."<br>
+                    "In summary, simple queries in DBMS form the foundation for interacting with databases. From SELECT statements to WHERE clauses, ORDER BY, JOINs, aggregation functions, and subqueries, mastering these basic operations is key to working with relational databases."<br>
+                    "Thank you for joining us for this overview of simple queries in DBMS. If you enjoyed this video, don't forget to like, comment, and subscribe for more tutorials and insights into database management."<br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="button">
+            <div class="b1" >
+                <a href="trend.html" class="btn1">PREV</a>
+            </div>
+            <div class="b2">
+                <a href="home.html" class="btn2">NEXT</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
